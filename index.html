@@ -19,6 +19,33 @@
       height: 100vh;
     }
   </style>
-    <div></div>
+    <div  id="back"></div>
+    <script>
+      let ind =0;
+     let images = [
+      "739009583260038531.jpg",
+      "800585271300014537.jpg",
+      "Ajith.jpg",
+      "Brami Bhai on angry mood.jpg",
+       "download.jpg",
+    "Eww bruh😂.jpg",
+    "master_.jpg",
+    "Mecore.jpg",
+    "Rajini Meme.jpg",
+    "Rajini Sonth 😂💀.jpg",
+    "sorry but this made me laugh a lot_.jpg",
+    "Whoa Superstar Rajinikanth templates.jpg"
+    ];
+    let ele = document.getElementById('back');
+    setInterval(function() {
+       ele.style.backgroundImage = `url("${images[ind]}")`;
+
+        ind++;
+
+        if (ind == images.length) {
+            ind = 0;
+        }
+    }, 2000);
+    </script>
 </body>
 </html>
